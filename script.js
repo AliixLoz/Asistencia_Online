@@ -5,7 +5,7 @@ const accion = params.get("accion");
 if (!token || !accion) {
   document.getElementById("msg").innerText = "❌ Faltan parámetros en el link";
 } else {
-  fetch(`https://script.google.com/macros/s/AKfycbx7di1uhdDNHKh4NfzDCqQPYG4ZeUpG_VJ-_-VNlYe2T1dzmHAzxWgX6L-f0X4L7P4/exec?token=${token}&accion=${accion}`)
+  fetch(`https://script.google.com/macros/s/AKfycbxLT0Z7HMgst8qhIsxLwgGe5YtleRrgptDf0Skt-4uuql3rwQIyfSF2kS1i_SN45cY1/exec?token=${token}&accion=${accion}`)
     .then(r => r.json())
     .then(d => {
       const msg = document.getElementById("msg");
