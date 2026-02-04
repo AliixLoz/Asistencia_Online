@@ -1,0 +1,26 @@
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #5b2d8b, #9f7aea);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial;
+}
+
+.card {
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  text-align: center;
+  width: 300px;
+}
+
+a {
+  display: block;
+  margin-top: 20px;
+  padding: 10px;
+  background: #5b2d8b;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
