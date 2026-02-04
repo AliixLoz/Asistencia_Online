@@ -1,8 +1,8 @@
 const params = new URLSearchParams(window.location.search);
 const token = params.get("token");
-const accion = params.get("rol"); 
+const accion = params.get("accion"); 
 
-fetch(`https://script.google.com/macros/s/AKfycbz1GTZkaceLzvyCWzLHz1xnncqgU6Xd2mr7j6sGHpmYnMXzUc6Og6aLQ60kQDS82gjR/exec?token=${token}&accion=${accion}`)
+fetch(`https://script.google.com/macros/s/AKfycbx7di1uhdDNHKh4NfzDCqQPYG4ZeUpG_VJ-_-VNlYe2T1dzmHAzxWgX6L-f0X4L7P4/exec?token=${token}&accion=${accion}`)
   .then(r => r.json())
   .then(d => {
     document.getElementById("msg").innerText = d.mensaje;
